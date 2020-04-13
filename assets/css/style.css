@@ -83,6 +83,73 @@
     }
 }
 
+.content-perfil {
+    position: relative;
+}
+
+.perfil {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: -100px;
+    padding: 5%;
+    border-radius: 24px 109px 24px 109px;
+    -moz-border-radius: 24px 109px 24px 109px;
+    -webkit-border-radius: 24px 109px 24px 109px;
+    border: 0px solid #000000;
+}
+
+.foto,
+.text-foto {
+    width: 50%;
+    padding: 2%;
+}
+
+.foto img {
+    width: 65%;
+}
+
+.content-perfil {
+    /*background-color: rgba(246, 125, 146, 0.6);*/
+    height: 470px;
+    background: rgb(246, 125, 146);
+    background: linear-gradient(0deg, rgba(246, 125, 146, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    border-bottom: 1px solid #f67d92!important;
+}
+
+
+/* -----    Estilos carousel    -------*/
+
+
+/*Contenedor principal y flechas*/
+
+.icons-habilidades {
+    margin-bottom: 70px;
+}
+
+.icons-habilidades .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icons-habilidades .contenedor-principal .flecha-izquierda,
+.icons-habilidades .contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
 @media (max-width: 990px) {
     #menu {
         background-color: #f67d92!important;
@@ -90,15 +157,28 @@
     .navbar-brand {
         color: #343a40!important;
     }
-    .text-header p {
-        border-bottom: none;
-    }
     .text-header p span {
         font: 700 2.5em "Oswald", sans-serif;
     }
     .navbar-nav {
         text-align: center;
     }
+    .foto,
+    .text-foto {
+        width: 100%;
+    }
+    .content-perfil {
+        height: 755px;
+    }
+    .img-text-perfil {
+        flex-direction: column!important;
+    }
+    .perfil {
+        padding-bottom: 10%;
+    }
 }
 
-@media (max-width: 768px) {}
+
+/*background-color: rgba(0, 0, 0, 0.6);
+
+*/
