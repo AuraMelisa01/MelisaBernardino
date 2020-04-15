@@ -51,34 +51,24 @@
         color: white;
     }
     
-    .text-header p span {
-        font: 700 4em "Oswald", sans-serif;
-        letter-spacing: 0;
-        padding: 0.25em 0 0.325em;
-        display: block;
-        margin: 0 auto;
-        text-shadow: 0 0 80px rgba(255, 255, 255, .5);
-        /* Clip Background Image */
-        background: url(../images/animated_text_fill.png) repeat-y;
-        -webkit-background-clip: text;
-        background-clip: text;
-        /* Animate Background Image */
-        -webkit-text-fill-color: transparent;
-        -webkit-animation: aitf 80s linear infinite;
-        /* Activate hardware acceleration for smoother animations */
-        -webkit-transform: translate3d(0, 0, 0);
-        -webkit-backface-visibility: hidden;
+    .title {
+        text-align: center;
+        color: #FFF;
+        letter-spacing: 1px;
     }
-    /* Animate Background Image */
     
-    @-webkit-keyframes aitf {
-        0% {
-            background-position: 0% 50%;
-        }
-        100% {
-            background-position: 100% 50%;
-        }
+    h1 {
+        background-image: url(https://media.giphy.com/media/1xNBjdWUErvYDRAM2u/giphy.gif);
+        background-size: cover;
+        color: transparent;
+        -moz-background-clip: text;
+        -webkit-background-clip: text;
+        text-transform: uppercase;
+        font-size: 50px;
+        line-height: .75;
+        margin: 10px 0;
     }
+    /* PERFIL SOBRE MI*/
     
     .content-perfil {
         position: relative;
@@ -278,11 +268,5 @@
         }
         .tabs .tab-2 div .d-flex div {
             width: auto;
-        }
-        .text-header p span {
-            -webkit-animation: none;
-            /* Activate hardware acceleration for smoother animations */
-            -webkit-transform: none;
-            -webkit-backface-visibility: none;
         }
     }
