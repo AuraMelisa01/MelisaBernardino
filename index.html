@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>* Melisa Bernardino *</title>
+    <title>* MB *</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/flower.ico" type="image/x-icon" width="20px">
 </head>
 
 <body>
@@ -42,9 +43,11 @@
         </nav>
         <header>
             <div class="row">
-                <div class="col-12 p-0">
+                <div class="col-12 p-0 parallax">
+                    <!--
                     <img src="assets/images/black-computer.jpg" class="img-fluid d-none d-sm-none d-md-block">
                     <img src="assets/images/black-computer-mobile.png" class="img-fluid d-block d-sm-block d-md-none">
+                    -->
                 </div>
                 <div class="text-header d-flex flex-column align-items-center justify-content-center align-self-center">
                     <p class="d-flex flex-column justify-content-center align-items-center">
@@ -86,7 +89,7 @@
         <section>
             <div class="row">
                 <div class="col-12 p-0">
-                    <div style="height: 150px; overflow: hidden;">
+                    <div style="height: 150px; overflow: hidden;" class="back-tab-black">
                         <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                           <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #f67d92;"></path>
                         </svg>
@@ -96,53 +99,111 @@
         </section>
         <section>
             <div class="row">
-                <div class="col-12 ">
+                <div class="col-12 p-0 back-tab-black">
                     <div class="title text-center">
                         <h2>HABILIDADES</h2>
                     </div>
                     <div class="icons-habilidades">
-                        <div class="controladores">
-                            <div class="indicadores">
-
-                            </div>
-                        </div>
-                        <div class="contenedor-principal">
-                            <button role="button" id="flecha-izquierda" class="flecha-izquierda">
-                                    <i class="fas fa-angle-double-left"></i>
-                                </button>
-                            <div class="content-carousel">
-                                <div class="carousel">
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/1.png" alt=""></a>
+                        <div class="tabs">
+                            <div class="tab-2">
+                                <label for="tab2-1">TÉCNICAS</label>
+                                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                                <div style="color:whitesmoke;">
+                                    <div class="d-flex flex-row align-items-center">
+                                        <div><i class="fab fa-html5"></i>
+                                            <p>HTML5</p>
+                                        </div>
+                                        <div><i class="fab fa-css3-alt"></i>
+                                            <p>CSS3 / FLEXBOX</p>
+                                        </div>
+                                        <div><i class="fab fa-bootstrap"></i>
+                                            <p>BOOTSTRAP</p>
+                                        </div>
+                                        <div><i class="fab fa-mdb"></i>
+                                            <p>MATERIAL DESIGN Bootstrap</p>
+                                        </div>
+                                        <div><i class="fab fa-js-square"></i>
+                                            <p>JavaScript</p>
+                                        </div>
                                     </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/2.png" alt=""></a>
+                                    <div class="d-flex flex-row jalign-items-center">
+                                        <div><img src="assets/images/jquery.png" alt="" class="mb-2">
+                                            <p>JQUERY</p>
+                                        </div>
+                                        <div><i class="fab fa-github-square"></i></i>
+                                            <p>GITHUB</p>
+                                        </div>
+                                        <div><i class="fab fa-shopify"></i>
+                                            <p>SHOPIFY</p>
+                                        </div>
+                                        <div><i class="fab fa-node-js"></i>
+                                            <p>NODE JS</p>
+                                        </div>
+                                        <div><i class="fab fa-angular"></i>
+                                            <p>ANGULAR 6</p>
+                                        </div>
                                     </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/3.png" alt=""></a>
-                                    </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/4.png" alt=""></a>
-                                    </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/5.png" alt=""></a>
-                                    </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/6.png" alt=""></a>
-                                    </div>
-                                    <div class="tecnology">
-                                        <a href="#"><img src="assets/images/carousel/7.png" alt=""></a>
+                                    <div class="d-flex flex-row justify-content-center align-items-center">
+                                        <div><img src="assets/images/firebase.png" alt="" class="mb-2">
+                                            <p>FIREBASE</p>
+                                        </div>
+                                        <div><i class="fab fa-wordpress"></i>
+                                            <p>WORDPRESS</p>
+                                        </div>
+                                        <div><i class="fab fa-invision"></i>
+                                            <p>INVISION STUDIO</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <button role="button" id="flecha-derecha" class="flecha-derecha">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </button>
+                            <div class="tab-2">
+                                <label for="tab2-2">BLANDAS</label>
+                                <input id="tab2-2" name="tabs-two" type="radio">
+                                <div style="color:whitesmoke;" class="tab-2-cont">
+                                    <div class="d-flex flex-row justify-content-around align-items-center">
+                                        <div><i class="fas fa-users"></i>
+                                            <p>TRABAJO EN EQUIPO</p>
+                                        </div>
+                                        <div><i class="far fa-comment-alt"></i>
+                                            <p>TOMA DE DESICIONES</p>
+                                        </div>
+                                        <div><i class="fas fa-smile"></i>
+                                            <p>MANEJO DE ESTRÉS</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-around align-items-center">
+                                        <div><i class="fas fa-user-cog"></i>
+                                            <p>ADAPTACIÓN</p>
+                                        </div>
+                                        <div><i class="fas fa-laptop-code"></i>
+                                            <p>AUTO-APRENDIZAJE</p>
+                                        </div>
+                                        <div><i class="far fa-address-book"></i>
+                                            <p>ORGANIZACIÓN</p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row justify-content-around align-items-center">
+                                        <div><i class="fas fa-microphone"></i>
+                                            <p>COMUNICACIÓN</p>
+                                        </div>
+                                        <div><i class="far fa-calendar-alt"></i>
+                                            <p>METODOLOGÍAS ÁGILES</p>
+                                        </div>
+                                        <div><i class="fas fa-chart-line"></i>
+                                            <p>PERSEVERANCIA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
+
                 </div>
             </div>
-        </section>
+    </div>
+    </section>
 
 
 
@@ -154,5 +215,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="assets/js/nav-transparent.js"></script>
+
 
 </html>
