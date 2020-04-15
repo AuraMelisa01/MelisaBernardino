@@ -72,6 +72,7 @@
     -webkit-backface-visibility: hidden;
 }
 
+
 /* Animate Background Image */
 
 @-webkit-keyframes aitf {
@@ -268,5 +269,11 @@ select:focus {
     }
     .tabs .tab-2 div .d-flex div p {
         font-size: 15px;
+    }
+    .tabs .tab-2 div .d-flex {
+        flex-direction: column!important;
+    }
+    .tabs .tab-2 div .d-flex div {
+        width: auto;
     }
 }
