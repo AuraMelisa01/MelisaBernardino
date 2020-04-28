@@ -12,10 +12,15 @@
     background-color: #f67d92;
 }
 
+.navbar-brand {
+    cursor: pointer;
+}
+
 .nav-item .nav-link,
 .title.text-center h2,
 .footer .footer-name p {
     color: white !important;
+    cursor: pointer;
 }
 
 .nav-item .nav-link:hover {
@@ -122,10 +127,6 @@ h1 {
 .text-foto a {
     width: 50%;
     text-align: center;
-}
-
-.text-foto a .btn-cv {
-    padding: 5%;
 }
 
 
@@ -272,7 +273,7 @@ select:focus {
     position: relative;
     width: 281px;
     height: 499px;
-    margin: 20px 15px;
+    margin: 30px 15px;
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 30px 30px rgba(0, 0, 0, 0.5);
     border-radius: 24px 109px 24px 109px;
@@ -322,6 +323,7 @@ select:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
 }
 
 .box .content h3 {
@@ -334,13 +336,15 @@ select:focus {
 
 .box .content p {
     padding-top: 10%;
-    opacity: 0;
-    transition: 0.5s;
-    text-align: center;
     color: #fff;
+    text-align: center;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.btn-outline-danger {
+.btn-outline-danger,
+.btn-outline-primary {
     color: #f67d92;
     border-color: #f67d92;
     background-color: transparent;
@@ -348,7 +352,8 @@ select:focus {
     width: 100%;
 }
 
-.btn-outline-danger:hover {
+.btn-outline-danger:hover,
+.btn-outline-primary:hover {
     color: #fff;
     background-color: #f67d92;
     border-color: #f67d92;
@@ -456,6 +461,7 @@ select:focus {
     }
     .img-text-perfil {
         flex-direction: column !important;
+        padding-bottom: 15px;
     }
     .content-cards .two-divs {
         flex-direction: column!important;
@@ -466,6 +472,9 @@ select:focus {
 @media only screen and (min-width: 320px) and (max-width: 736px) {
     .content-perfil {
         height: 700px;
+    }
+    .img-text-perfil {
+        padding-bottom: 15px;
     }
     .perfil {
         width: 90%;
@@ -486,5 +495,8 @@ select:focus {
     .content-cards {
         flex-direction: column!important;
         align-items: center!important;
+    }
+    .content-footer {
+        width: 100%;
     }
 }

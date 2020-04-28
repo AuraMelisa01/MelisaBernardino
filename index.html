@@ -17,23 +17,23 @@
             <div class="row">
                 <div class="col-12 p-0">
                     <nav id="menu" class="navbar navbar-expand-lg navbar-dark back-color-nav fixed-top">
-                        <a class="navbar-brand color-pink" href="#">* MB *</a>
+                        <a class="ancla navbar-brand color-pink" data-ancla="home">* MB *</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link">Sobre mí </a></i>
+                                    <a class="ancla nav-link" data-ancla="sobre-mi">Sobre mí </a></i>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Habilidades </a>
+                                    <a class="ancla nav-link" data-ancla="habilidades">Habilidades </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link">Proyectos </a>
+                                    <a class="ancla nav-link" data-ancla="proyectos">Proyectos </a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link">Contacto </a>
+                                    <a class="ancla nav-link" data-ancla="contacto">Contacto </a>
                                 </li>
                             </ul>
                         </div>
@@ -42,7 +42,7 @@
             </div>
         </nav>
         <!--PERFIL-->
-        <header>
+        <header id="home">
             <div class="row">
                 <div class="col-12 p-0">
                     <img src="assets/images/black-computer.jpg" class="img-fluid d-none d-sm-none d-md-block">
@@ -55,16 +55,20 @@
                         <p class="d-flex flex-column justify-content-center align-items-center">
                             FRONT-END DEVELOPER
                         </p>
+                        <div class="d-flex" id="sobre-mi"></div>
                     </div>
-
                 </div>
+
             </div>
+
         </header>
         <!--SOBRE MÍ-->
+
         <section>
             <div class="row">
                 <div class="col-12 p-0">
                     <div class="content-perfil d-flex justify-content-center">
+
                         <div class="perfil d-flex flex-column align-items-center">
                             <div class="divs-white d-flex flex-column justify-content-center align-items-center">
                                 <div class="title">
@@ -79,10 +83,9 @@
                                         <p>Mi nombre es Bernardino González Aura Melisa , soy Ing. Tecnologías de la Información, y busco oportunidades como Front-End Web Developer. Me gusta mucho la tecnología, y el poder aprender cada día algo nuevo es
                                             escencial para crecer profesional y emocionalmente. El auto-aprendizaje y la disciplina son elementos fundamentales para seguir innovando y evolucionando en este mundo tecnológico y digital. Soy coleccionista
                                             de plumas de ave y amo la música rock.</p>
+
                                         <a href="assets/melisa-bernardino.pdf" target="_blank" rel="noopener noreferrer">
-                                            <button type="button" class="btn-cv"> 
-                                                    <i class="far fa-file-pdf"></i>  VER CV                                      
-                                             </button>
+                                            <button type="button" class="btn btn-outline-primary border-radius-none"><i class="fas fa-file-pdf"></i>  VER CV</button>
                                         </a>
                                     </div>
 
@@ -96,7 +99,7 @@
             </div>
         </section>
         <!--BORDE SVG-->
-        <section>
+        <section id="habilidades">
             <div class="row">
                 <div class="col-12 p-0">
                     <div style="height: 150px; overflow: hidden;" class="back-tab-black">
@@ -202,7 +205,7 @@
             </div>
         </section>
         <!--BORDE SVG-->
-        <section>
+        <section id="proyectos">
             <div class="row">
                 <div class="col-12 p-0">
                     <div style="height: 150px; overflow: hidden;" class="back-pink">
@@ -326,7 +329,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer id="contacto">
             <div class="row">
                 <div class="col-12 p-0 footer-name ">
                     <div class="footer">
@@ -343,7 +346,7 @@
                         </div>
 
                         <div class="border-line"></div>
-                        <div class="create d-flex flex-row justify-content-center p-5">
+                        <div class="create d-flex flex-row justify-content-center pt-5 pb-5">
                             <p>Elaborado por: <span>Melisa Bernardino 2020</span></p>
                         </div>
                     </div>
@@ -358,5 +361,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
 <script src="assets/js/nav-transparent.js"></script>
+<script src="assets/js/ancla.js"></script>
 
 </html>
