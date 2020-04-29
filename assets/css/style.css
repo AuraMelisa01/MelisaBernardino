@@ -1,3 +1,7 @@
+body {
+    font-family: Kodchasan, sans-serif;
+}
+
 #menu {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
 }
@@ -119,9 +123,17 @@ h1 {
 
 .content-perfil {
     /*background-color: rgba(246, 125, 146, 0.6);*/
-    height: 470px;
+    height: 500px;
     background: rgb(246, 125, 146);
     background: linear-gradient(0deg, rgba(246, 125, 146, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.foto p {
+    font-family: 'Allura', cursive;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .text-foto a {
@@ -344,7 +356,7 @@ select:focus {
 }
 
 .btn-outline-danger,
-.btn-outline-primary {
+.btn-outline-dark {
     color: #f67d92;
     border-color: #f67d92;
     background-color: transparent;
@@ -353,7 +365,7 @@ select:focus {
 }
 
 .btn-outline-danger:hover,
-.btn-outline-primary:hover {
+.btn-outline-dark:hover {
     color: #fff;
     background-color: #f67d92;
     border-color: #f67d92;
@@ -471,7 +483,7 @@ select:focus {
 
 @media only screen and (min-width: 320px) and (max-width: 736px) {
     .content-perfil {
-        height: 700px;
+        height: 735px;
     }
     .img-text-perfil {
         padding-bottom: 15px;
