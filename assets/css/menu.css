@@ -1,0 +1,188 @@
+.nav {
+    position: relative;
+}
+
+#box {
+    height: 450px;
+    width: 350px;
+    background-color: #34495E;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.cont-menu {
+    z-index: 1200;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+#circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 0 0 100% 0;
+    background-color: #f67d92;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+#menu-icon {
+    position: absolute;
+    margin-top: 13px;
+}
+
+.bar {
+    height: 4px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.click {
+    -webkit-animation: activate 0.3s linear forwards;
+    animation: activate 0.3s linear forwards;
+}
+
+#circle.click {
+    height: 80px;
+    width: 80px;
+}
+
+@-webkit-keyframes activate {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(10.5);
+    }
+}
+
+@keyframes activate {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(10.5);
+    }
+}
+
+.back {
+    -webkit-animation: deactivate 0.3s linear forwards;
+    animation: deactivate 0.3s linear forwards;
+}
+
+@-webkit-keyframes deactivate {
+    0% {
+        transform: scale(10.5);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes deactivate {
+    0% {
+        transform: scale(10.5);
+    }
+    25% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    width: 320px;
+    background-color: transparent!important;
+}
+
+#menu ul div li {
+    list-style: none;
+    margin-top: 18px;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 14px;
+}
+
+#menu ul div li i {
+    color: #343a40;
+    vertical-align: middle;
+    margin-right: 18px;
+}
+
+#menu ul div .name {
+    font-size: 25px;
+}
+
+#back i {
+    font-size: 50px;
+    color: ffff;
+}
+
+#menu ul {
+    padding-left: 15px;
+}
+
+#menu ul div {
+    cursor: pointer;
+}
+
+#menu ul .me {
+    margin-left: 52%;
+}
+
+#menu ul .habil {
+    margin-left: 26%;
+}
+
+#menu ul .project {
+    margin-left: 13%;
+}
+
+#menu ul .contact {
+    margin-left: 0%;
+}
+
+#back {
+    cursor: pointer;
+}

@@ -7,6 +7,7 @@
     <title>* MB *</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/menu.css">
     <link rel="shortcut icon" href="assets/images/flower.ico" type="image/x-icon" width="20px">
     <link href="https://fonts.googleapis.com/css?family=Cookie|Kodchasan|McLaren" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
@@ -17,26 +18,61 @@
     <div class="container-fluid ">
         <!--MENÚ-->
         <nav>
+            <div class="cont-menu">
+                <div id="circle">
+                    <div id="menu-icon">
+                        <div class="bar" id="bar-one"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <div class="name d-flex flex-row justify-content-between">
+                            <li id="back"><i class="fas fa-times fa-2x"></i></li>
+                            <li class="ancla name">* MB *</li>
+                        </div>
+                        <div class="me ancla" data-ancla="sobre-mi">
+                            <li><i class="fa fa-id-card fa-2x"></i>SOBRE MÍ</li>
+                        </div>
+                        <div class="habil ancla" data-ancla="habilidades">
+                            <li><i class="fa fa-cogs fa-2x"></i>HABILIDADES</li>
+                        </div>
+                        <div class="project ancla" data-ancla="proyectos">
+                            <li><i class="fa fa-laptop-code fa-2x"></i>PROYECTOS</li>
+                        </div>
+                        <div class="contact ancla" data-ancla="contacto">
+                            <li><i class="fas fa-envelope fa-2x"></i>CONTACTO</li>
+
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--
+        <nav>
             <div class="row">
                 <div class="col-12 p-0">
                     <nav id="menu" class="navbar navbar-expand-lg navbar-dark back-color-nav fixed-top">
-                        <a class="ancla navbar-brand color-pink" data-ancla="home">* MB *</a>
+                        <a class="ancla navbar-brand color-pink" id="home" data-ancla="home">* MB *</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
                     </button>
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="ancla nav-link" data-ancla="sobre-mi">Sobre mí </a></i>
+                                <li class="nav-item" id="sobre-mi-li">
+                                    <a class="ancla nav-link" id="sobre-mi-a" data-ancla="sobre-mi">Sobre mí </a></i>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="ancla nav-link" data-ancla="habilidades">Habilidades </a>
+                                <li class="nav-item" id="habilidades-li">
+                                    <a class="ancla nav-link" id="habilidades-a" data-ancla="habilidades">Habilidades </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="ancla nav-link" data-ancla="proyectos">Proyectos </a>
+                                <li class="nav-item" id="proyectos-li">
+                                    <a class="ancla nav-link" id="proyectos-a" data-ancla="proyectos">Proyectos </a>
                                 </li>
-                                <li class="nav-item ">
-                                    <a class="ancla nav-link" data-ancla="contacto">Contacto </a>
+                                <li class="nav-item " id="contacto-li">
+                                    <a class="ancla nav-link" id="contacto-a" data-ancla="contacto">Contacto </a>
                                 </li>
                             </ul>
                         </div>
@@ -44,6 +80,8 @@
                 </div>
             </div>
         </nav>
+        -->
+
         <!--PERFIL-->
         <header id="home">
             <div class="row">
@@ -51,6 +89,7 @@
                     <img src="assets/images/black-computer.jpg" class="img-fluid d-none d-sm-none d-md-block">
                     <img src="assets/images/black-computer-mobile.jpg" class="img-fluid d-block d-sm-block d-md-none">
                 </div>
+
                 <div class="text-header d-flex flex-column align-items-center justify-content-center align-self-center">
                     <div class="title-name color-pink">
                         <h1>MELISA BERNARDINO</h1>
@@ -362,7 +401,7 @@
 <script src="assets/js/jquery-3.4.1.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-<script src="assets/js/nav-transparent.js"></script>
-<script src="assets/js/ancla.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/scroll.js"></script>
 
 </html>
