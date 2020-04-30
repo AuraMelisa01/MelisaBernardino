@@ -16,7 +16,7 @@
 
 <body>
     <div class="container-fluid ">
-        <!--MENÚ-->
+        <!--INICIO MENU-->
         <nav>
             <div class="cont-menu">
                 <div id="circle">
@@ -30,19 +30,30 @@
                     <ul>
                         <div class="name d-flex flex-row justify-content-between">
                             <li id="back"><i class="fas fa-times fa-2x"></i></li>
-                            <li class="ancla name" data-ancla="home">* MB *</li>
+                            <a href="home">
+                                <li class="ancla name" data-ancla="home">* MB *</li>
+                            </a>
                         </div>
                         <div class="me ancla" data-ancla="sobre-mi">
-                            <li><i class="fa fa-id-card fa-2x"></i>SOBRE MÍ</li>
+                            <a href="#sobre-mi">
+                                <li><i class="fa fa-id-card fa-2x"></i>SOBRE MÍ</li>
+                            </a>
                         </div>
                         <div class="habil ancla" data-ancla="habilidades">
-                            <li><i class="fa fa-cogs fa-2x"></i>HABILIDADES</li>
+                            <a href="#habilidades">
+                                <li><i class="fa fa-cogs fa-2x"></i>HABILIDADES</li>
+                            </a>
+
                         </div>
                         <div class="project ancla" data-ancla="proyectos">
-                            <li><i class="fa fa-laptop-code fa-2x"></i>PROYECTOS</li>
+                            <a href="#proyectos">
+                                <li><i class="fa fa-laptop-code fa-2x"></i>PROYECTOS</li>
+                            </a>
                         </div>
                         <div class="contact ancla" data-ancla="contacto">
-                            <li><i class="fas fa-envelope fa-2x"></i>CONTACTO</li>
+                            <a href="#contacto">
+                                <li><i class="fas fa-envelope fa-2x"></i>CONTACTO</li>
+                            </a>
 
                         </div>
 
@@ -50,39 +61,9 @@
                 </div>
             </div>
         </nav>
+        <!--FIN MENU-->
 
-        <!--
-        <nav>
-            <div class="row">
-                <div class="col-12 p-0">
-                    <nav id="menu" class="navbar navbar-expand-lg navbar-dark back-color-nav fixed-top">
-                        <a class="ancla navbar-brand color-pink" id="home" data-ancla="home">* MB *</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item" id="sobre-mi-li">
-                                    <a class="ancla nav-link" id="sobre-mi-a" data-ancla="sobre-mi">Sobre mí </a></i>
-                                </li>
-                                <li class="nav-item" id="habilidades-li">
-                                    <a class="ancla nav-link" id="habilidades-a" data-ancla="habilidades">Habilidades </a>
-                                </li>
-                                <li class="nav-item" id="proyectos-li">
-                                    <a class="ancla nav-link" id="proyectos-a" data-ancla="proyectos">Proyectos </a>
-                                </li>
-                                <li class="nav-item " id="contacto-li">
-                                    <a class="ancla nav-link" id="contacto-a" data-ancla="contacto">Contacto </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </nav>
-        -->
-
-        <!--PERFIL-->
+        <!--INICIO HEADER-->
         <header id="home">
             <div class="row">
                 <div class="col-12 p-0">
@@ -99,12 +80,11 @@
                         <div class="d-flex" id="sobre-mi"></div>
                     </div>
                 </div>
-
             </div>
-
         </header>
-        <!--SOBRE MÍ-->
+        <!--FIN HEADER-->
 
+        <!--INICIO PERFIL-->
         <section>
             <div class="row">
                 <div class="col-12 p-0">
@@ -139,7 +119,9 @@
                 </div>
             </div>
         </section>
-        <!--BORDE SVG-->
+        <!--FIN PERFIL-->
+
+        <!--INICIO BORDE SVG-->
         <section id="habilidades">
             <div class="row">
                 <div class="col-12 p-0">
@@ -151,7 +133,9 @@
                 </div>
             </div>
         </section>
-        <!--HABILIDADES-->
+        <!--FIN BORDE SVG-->
+
+        <!--INICIO HABILIDADES-->
         <section>
             <div class="row">
                 <div class="col-12 p-0 back-tab-black">
@@ -245,7 +229,9 @@
                 </div>
             </div>
         </section>
-        <!--BORDE SVG-->
+        <!--FIN HABILIDADES-->
+
+        <!--INICIO BORDE SVG-->
         <section id="proyectos">
             <div class="row">
                 <div class="col-12 p-0">
@@ -257,7 +243,9 @@
                 </div>
             </div>
         </section>
-        <!--PROYECTOS-->
+        <!--FIN BORDE SVG-->
+
+        <!--INICIO PROYECTOS-->
         <section>
             <div class="row">
                 <div class="col-12 p-0 back-pink">
@@ -358,7 +346,9 @@
                 </div>
             </div>
         </section>
-        <!--BORDE SVG-->
+        <!--FIN PROYECTOS-->
+
+        <!--INICIO BORDE SVG-->
         <section>
             <div class="row">
                 <div class="col-12 p-0">
@@ -370,6 +360,9 @@
                 </div>
             </div>
         </section>
+        <!--FIN BORDE SVG-->
+
+        <!--INICIO FOOTER-->
         <footer id="contacto">
             <div class="row">
                 <div class="col-12 p-0 footer-name ">
@@ -394,6 +387,7 @@
                 </div>
             </div>
         </footer>
+        <!--FIN FOOTER-->
     </div>
 
 </body>

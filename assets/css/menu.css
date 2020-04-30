@@ -135,7 +135,13 @@
     background-color: transparent!important;
 }
 
-#menu ul div li {
+#menu ul div a:hover {
+    text-decoration: none;
+    color: none;
+}
+
+#menu ul div li,
+#menu ul div a li {
     list-style: none;
     margin-top: 18px;
     color: #fff;
@@ -143,14 +149,18 @@
     font-size: 14px;
 }
 
-#menu ul div li i {
+#menu ul div li i,
+#menu ul div a li i {
     color: #343a40;
     vertical-align: middle;
     margin-right: 18px;
 }
 
-#menu ul div .name {
-    font-size: 25px;
+#menu ul div li:hover,
+#menu ul div a li:hover {
+    color: #343a40;
+    font-weight: bolder;
+    text-shadow: 0 0 0.2em #D0D3D4, 0 0 0.2em #D0D3D4, 0 0 0.2em #D0D3D4;
 }
 
 #back i {
@@ -164,6 +174,10 @@
 
 #menu ul div {
     cursor: pointer;
+}
+
+#menu ul div .name {
+    font-size: 25px;
 }
 
 #menu ul .me {
